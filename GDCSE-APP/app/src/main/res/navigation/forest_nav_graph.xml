@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/forest_nav_graph"
+    app:startDestination="@id/forestHomeFragment">
+
+    <fragment
+        android:id="@+id/forestHomeFragment"
+        android:name="com.example.treecycle.presentation.forest.ui.ForestHomeFragment"
+        android:label="fragment_forest_home"
+        tools:layout="@layout/fragment_forest_home" >
+        <action
+            android:id="@+id/action_forestHomeFragment_to_forestDetailFragment"
+            app:destination="@id/forestDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forestDetailFragment"
+        android:name="com.example.treecycle.presentation.forest.ui.ForestDetailFragment"
+        android:label="fragment_forest_detail"
+        tools:layout="@layout/fragment_forest_detail" >
+        <action
+            android:id="@+id/action_forestDetailFragment_to_forestHomeFragment"
+            app:destination="@id/forestHomeFragment"
+            app:popUpTo="@id/forestHomeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

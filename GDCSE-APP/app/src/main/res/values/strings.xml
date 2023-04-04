@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">TreeCycle</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="dummy_text">Considering your last ESRD report, Your kidney health is 78%. A healthy diet plan can slow down its destruction. Considering your last ESRD report, Your kidney health is 78%. A healthy diet plan can slow down its destruction.</string>
+    <string name="long_dummy_text">Considering your last ESRD report, Your kidney health is 78%. A healthy diet plan can slow down its destruction. Considering your last ESRD report, Your kidney health is 78%. A healthy diet plan can slow down its destruction.Considering your last ESRD report, Your kidney health is 78%. A healthy diet plan can slow down its destruction. Considering your last ESRD report, Your kidney health is 78%. A healthy diet plan can slow down its destruction.Considering your last ESRD report, Your kidney health is 78%. A healthy diet plan can slow down its destruction. Considering your last ESRD report, Your kidney health is 78%. A healthy diet plan can slow down its destruction.Considering your last ESRD report, Your kidney health is 78%. A healthy diet plan can slow down its destruction. Considering your last ESRD report, Your kidney health is 78%. A healthy diet plan can slow down its destruction.</string>
+    <string name="reuse_rebuild">Reuse, Rebuild...</string>
+    <string name="how_to_help_amp_save_the_earth"><![CDATA[How to help & save the Earth]]></string>
+    <string name="_10">10</string>
+    <string name="content_description">content Description</string>
+    <string name="title_activity_plant_tree">PlantTreeActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+    <!-- Plant Fragment string content -->
+    <string name="around_you">Around you...</string>
+    <string name="act_before_too_late">Act before it\'s too late!</string>
+    <string name="co2_saved_number">10.5+</string>
+    <string name="tons_of_co2_saved">Tons of CO2\nYou Saved</string>
+    <string name="plant_a_tree">Plant A\nTree</string>
+    <string name="see_my_forest">See my Forest...</string>
+    <string name="climate_change_lengthy_process">Climate change is a lenghty process which requires small steps.</string>
+
+    <!-- Plant a Tree string content -->
+    <string name="plant_a_tree_2">Plant a Tree</string>
+    <string name="no_planet_b">Because there\'s no planet B</string>
+    <string name="tree_name">Tree name</string>
+    <string name="take_a_picture">Take a\npicture</string>
+    <string name="or_choose_manually">Or Choose Manually</string>
+    <string name="enter_date">Date (dd/mm/yy)</string>
+    <string name="enter_address">Address</string>
+    <string name="plant_button_text">Plant</string>
+    <string name="completed">Completed</string>
+    <string name="finish_text">Finish</string>
+
+</resources>

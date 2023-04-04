@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:scrollbars="none"
+android:background="@color/background"
+
+    tools:context=".presentation.forest.ui.ForestHomeFragment">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Heading and subtitle  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:paddingTop="16dp">
+
+        <TextView
+            style="@style/text_heading_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="My Forest"
+            android:textSize="28sp" />
+
+        <TextView
+            style="@style/text_heading_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to your forest"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <!-- Forest Illustration -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:scaleType="center"
+        android:src="@drawable/forest_illuatration"/>
+
+    <!-- Layout hosting two cards horizontally  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <!-- Trees planted card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="200dp"
+            android:layout_height="220dp"
+
+            android:layout_margin="8dp"
+            app:cardCornerRadius="18dp"
+
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+                android:orientation="vertical"
+
+                android:padding="8dp"
+                android:paddingBottom="26dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/ubuntu_medium"
+
+                    android:gravity="center"
+
+                    android:text="3"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:textSize="60sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+
+                    style="@style/text_heading_2"
+                    android:text="Plants have you\nplanted so far"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+        <!-- Plant A Tree card button -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/plantTreeCardButton"
+
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_margin="8dp"
+
+            android:clickable="true"
+            android:focusable="true"
+
+            app:cardBackgroundColor="@color/colorSecondary"
+            app:cardCornerRadius="18dp"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:gravity="center"
+
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/btn_plus_1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+
+                    android:fontFamily="@font/ubuntu_medium"
+                    style="@style/text_heading_1"
+
+                    android:gravity="center"
+                    android:text="@string/plant_a_tree"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <!-- Planted trees recycler view -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/planted_trees_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:scrollbars="none"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>

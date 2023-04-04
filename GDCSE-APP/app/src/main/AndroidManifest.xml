@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TreeCycle"
+        tools:targetApi="31">
+        <activity
+            android:name=".presentation.education.EducationRecyclingCardsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.education.EducationRecyclingChaptersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.donations.DonationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.forest.ForestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.plantTree.PlantTreeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_plant_tree"
+            android:theme="@style/Theme.TreeCycle.NoActionBar" />
+        <activity
+            android:name=".presentation.recycle.RecycleItemDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.recycle.RecyclingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.education.EducationCardsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.education.EducationChaptersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.education.EducationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBdCQ7ZYpQcth66jr9vldnhV8bHO0I2690" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

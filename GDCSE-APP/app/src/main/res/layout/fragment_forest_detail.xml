@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    tools:context=".presentation.forest.ui.ForestDetailFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Heading and subtitle  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:paddingTop="16dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/back_to_forest_button"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textColor="@color/black"
+
+                    android:text="Back to Forest"
+                    app:cornerRadius="18dp"
+
+                    android:layout_gravity="start"
+                    app:icon="@drawable/ic_back"
+                    app:iconTint="@color/black"
+                    app:iconSize="14dp"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+            <!-- Forest Illustration -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:scaleType="center"
+                android:layout_margin="16dp"
+                android:src="@drawable/img_plant_forest_2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="18dp"
+                    app:contentPadding="12dp"
+                    app:strokeWidth="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="26dp"
+                        android:paddingBottom="26dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ubuntu_medium"
+                            android:gravity="center"
+                            android:text="@string/_10"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="60sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            style="@style/text_heading_2"
+
+                            android:gravity="center"
+                            android:text="Items\nRecycled"
+
+                            android:textColor="@color/colorText"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.2"
+                        app:cardBackgroundColor="@color/colorPrimary"
+                        app:cardCornerRadius="18dp"
+                        app:strokeWidth="0dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                style="@style/text_heading_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="22dp"
+                                android:gravity="center"
+                                android:text="6"
+                                android:textSize="36sp"/>
+
+                            <TextView
+                                style="@style/body_text_1"
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="days being nourished" />
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_weight="1.8"
+                        app:cardBackgroundColor="@color/colorPrimary"
+                        app:cardCornerRadius="18dp"
+                        app:strokeWidth="0dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/text_heading_1"
+                                android:gravity="center"
+                                android:text="45 Tons"
+                                android:textSize="32sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/text_heading_2"
+                                android:textSize="16sp"
+                                android:gravity="center"
+                                android:text="of CO2 saved"/>
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:paddingTop="12dp">
+
+                <TextView
+                    android:paddingLeft="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_heading_1"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:text="Your watering history"/>
+
+                <com.michalsvec.singlerowcalendar.calendar.SingleRowCalendar
+                    android:id="@+id/main_single_row_calendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:deselection="false"
+                    app:longPress="false"
+
+                    android:visibility="gone"
+
+                    app:multiSelection="false" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/calendar_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:orientation="horizontal"/>
+
+
+
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/water_plant_button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:cardCornerRadius="14dp"
+                android:layout_margin="16dp"
+                app:strokeWidth="0dp"
+                app:cardBackgroundColor="@color/colorSecondary">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        style="@style/text_heading_2"
+                        android:layout_marginRight="80dp"
+                        android:text="I've watered my tree"/>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_gravity="center"
+                        android:layout_width="56dp"
+                        android:layout_height="36dp"
+                        app:strokeWidth="0dp"
+                        android:elevation="0dp"
+                        app:cardBackgroundColor="@color/colorPrimary"
+                        app:cardCornerRadius="12dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/img_diamond" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="5"
+                                style="@style/body_text_1" />
+
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Lotte Animation Layout  -->
+    <LinearLayout
+        android:id="@+id/ll_bg_layer_4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_img_card_completion"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:src="@drawable/image_water" />
+
+        <TextView
+            style="@style/text_heading_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/completed"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="5dp"
+            android:text="You’ve earned 1,000 karma points on planting a seedling."
+            android:textColor="@color/background"
+            android:textSize="16sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_water_plant_finish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shadowDx="10"
+            android:layout_marginHorizontal="70dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@color/colorSecondary"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="@string/finish_text"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</FrameLayout>
